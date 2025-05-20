@@ -6,3 +6,7 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+/Expensify-Money-Management.iml
+/material_theme_project_new.xml
+/modules.xml
+/vcs.xml
