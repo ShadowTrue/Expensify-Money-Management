@@ -1,13 +1,17 @@
 FROM golang:1.24
 
-# Install any extra tools you want
-RUN apt-get update && apt-get install -y git curl unzip
-
-# Optional: set up your workdir
+# Set working directory
 WORKDIR /workspace
 
-# Optional: copy your source code
+# Optional: install common dev tools
+RUN apt-get update && apt-get install -y curl git
+
+# Optional: copy your code (but dev containers usually mount it instead)
 # COPY . .
 
-# Optional: set environment variables
+# Set environment vars
 ENV GO111MODULE=on
+
+CMD [ "sleep", "infinity" ]
+
+
